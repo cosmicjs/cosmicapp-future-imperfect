@@ -1,0 +1,23 @@
+{
+  "name": "future",
+  "version": "1.0.0",
+  "description": "Future Imperfect by HTML5 UP\r html5up.net | @n33co\r Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.5.2",
+    "babel-preset-es2015": "^6.5.0",
+    "compression": "^1.6.1",
+    "cosmicjs": "^2.1.2",
+    "express": "^4.13.4",
+    "hogan-express": "^0.5.2",
+    "install": "^0.4.4",
+    "moment": "^2.11.2",
+    "npm": "^3.7.2"
+  }
+}
