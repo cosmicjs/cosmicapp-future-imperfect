@@ -15,9 +15,8 @@ module.exports = (app, config, partials) => {
         post.created_friendly = created_friendly
         return post
       })
-      // Get current page
-      const objects = response.objects.all
       // Get current page / post
+      const objects = response.objects.all
       objects.forEach(page => {
         if (page.slug === slug)
           res.locals.page = page
