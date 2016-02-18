@@ -9,15 +9,17 @@
 	  <section id="intro">
 	    <header>
 	      <h2>
-          {{ post.title }}
+          {{ page.title }}
         </h2>
 	    </header>
 	  </section>
 
 	  <!-- Content -->
 	  <section id="content" style="max-width:1000px; margin: 0 auto">
-	  	<img style="max-width:100%; margin-bottom: 20px" src="https://cosmicjs.com/uploads/{{{ post.metafield.hero.value }}}" alt="" />
-	    {{{ post.content }}}
+	  	{{# post.metafield.hero.value }}
+	  		<img style="max-width:100%; margin-bottom: 20px" src="https://cosmicjs.com/uploads/{{ post.metafield.hero.value }}" alt="" />
+	  	{{/ post.metafield.hero.value }}
+	    {{{ page.content }}}
 	  </section>
 
 		<!-- Pagination -->

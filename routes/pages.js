@@ -15,12 +15,14 @@ module.exports = (app, config, partials) => {
         post.created_friendly = created_friendly
         return post
       })
-      // Get current post
-      friendly_date_posts.forEach(post => {
-        if (post.slug === slug)
-          res.locals.post = post
+      // Get current page
+      const objects = response.objects.all
+      // Get current page / post
+      objects.forEach(page => {
+        if (page.slug === slug)
+          res.locals.page = page
       })
-      if (!res.locals.post) {
+      if (!res.locals.page) {
         return res.render('404.html', {
           partials
         })  
