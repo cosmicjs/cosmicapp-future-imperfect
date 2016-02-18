@@ -1,34 +1,21 @@
-Future Imperfect by HTML5 UP
-html5up.net | @n33co
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-
-
-It's been a long time coming, but I've finally gotten around to creating a brand new
-blog-style template (and the first since Striped, which came out waaaaay back in 2013).
-Anyway, Future Imperfect features a clean, expansive layout, a toggleable search box,
-and -- because pretty much all modern browsers can use it now -- a whole lot of flexbox
-action. Enjoy it :)
-
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
-
-(* = not included)
-
-AJ
-n33.co @n33co dribbble.com/n33
-
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fortawesome.github.com/Font-Awesome)
-
-	Other:
-		jQuery (jquery.com)
-		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
-		Misc. Sass functions (@HugoGiraudel)
-		Respond.js (j.mp/respondjs)
-		Skel (skel.io)
+#Future Imperfect
+###Node.js Blog App
+#####[View a demo here](http://future-imperfect.cosmicapp.co/)
+[Sign up for Cosmic JS](https://cosmicjs.com/) to start managing content for your websites and applications faster and easier.
+The frontend is from [html5up.net](html5up.net) and is made dynamic with mustache `{{ }}` braces with content from the [Cosmic JS Client for JavaScript](https://www.npmjs.com/package/cosmicjs).
+####Get Started
+In ```app-server.js``` set your bucket slug:
+```
+const config = {
+  COSMIC_BUCKET: process.env.COSMIC_BUCKET || 'future-imperfect'
+}
+```
+Then install:
+```
+npm install
+```
+Then run 
+```
+npm start
+```
+Go to [http://localhost:3000](http://localhost:3000) in your browser of choice.
