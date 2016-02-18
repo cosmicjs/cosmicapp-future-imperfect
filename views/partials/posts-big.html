@@ -1,0 +1,27 @@
+<!-- Post -->
+{{# cosmic.objects.type.posts }}
+  <article class="post">
+    <header>
+      <div class="title">
+        <h2><a href="/{{ slug }}">{{ title }}</a></h2>
+        <p>{{ metafield.tag.value }}</p>
+      </div>
+      <div class="meta">
+        <time class="published" datetime="2015-11-01">{{ created_friendly }}</time>
+        <a href="#" class="author"><span class="name">{{ metafield.author.object.title }}</span><img src="https://cosmicjs.com/uploads/{{ metafield.author.object.metafields.0.value }}" alt="" /></a>
+      </div>
+    </header>
+    <a href="/{{ slug }}" class="image featured"><img src="https://cosmicjs.com/uploads/{{{ metafield.hero.value }}}" alt="" /></a>
+    {{{ metafield.teaser.value }}}
+    <footer>
+      <ul class="actions">
+        <li><a href="#" class="button big">Continue Reading</a></li>
+      </ul>
+      <ul class="stats">
+        <li><a href="#">General</a></li>
+        <li><a href="#" class="icon fa-heart">28</a></li>
+        <li><a href="#" class="icon fa-comment">128</a></li>
+      </ul>
+    </footer>
+  </article>
+{{/ cosmic.objects.type.posts }}

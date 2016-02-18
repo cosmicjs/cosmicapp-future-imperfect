@@ -1,0 +1,16 @@
+<!-- Posts List -->
+<section>
+  <ul class="posts">
+    {{# cosmic.objects.type.posts }}
+      <li>
+        <article>
+          <header>
+            <h3><a href="/{{ slug }}">{{ title }}</a></h3>
+            <time class="published">{{ created_friendly }}</time>
+          </header>
+          <a href="/{{ slug }}" class="image"><img src="https://cosmicjs.com/uploads/{{{ metafield.hero.value }}}" alt="" /></a>
+        </article>
+      </li>
+      {{/ cosmic.objects.type.posts }}
+  </ul>
+</section>
