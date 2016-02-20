@@ -1,34 +1,30 @@
 <!-- Menu -->
 <section id="menu">
-
   <!-- Search -->
   <section>
     <form class="search" method="get" action="#">
       <input type="text" name="query" placeholder="Search" />
     </form>
   </section>
-
   <!-- Links -->
   <section>
     <ul class="links">
       {{# cosmic.object.nav.metafield.links.children }}
-        <li>
-          <a href="{{ key }}">
-            <h3>{{ value }}</h3>
-            {{# children }}
-              <p>{{ value }}</p>
-            {{/ children }}
-          </a>
-        </li>
+      <li>
+        <a href="{{ key }}">
+        <h3>{{ value }}</h3>
+        {{# children }}
+        <p>{{ value }}</p>
+        {{/ children }}
+        </a>
+      </li>
       {{/ cosmic.object.nav.metafield.links.children }}
     </ul>
   </section>
-
   <!-- Actions -->
   <section>
-    <ul class="actions vertical">
-      <li><a href="#" class="button big fit">Log In</a></li>
-    </ul>
+  <ul class="actions vertical">
+    <li><a href="#" class="button big fit">Log In</a></li>
+  </ul>
   </section>
-
 </section>

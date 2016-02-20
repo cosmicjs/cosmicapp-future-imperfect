@@ -1,34 +1,27 @@
 {{> header }}
-
-	{{> nav }}
-
-	<!-- Main -->
-	<div id="main">
-		<!-- Intro -->
-	  <section id="intro">
-	    <a target="_blank" href="{{ cosmic.object.header.metafield.logo-link.value }}" class="logo">
-	      <img src="https://cosmicjs.com/uploads/{{ cosmic.object.header.metafield.logo.value }}" alt="" />
-	    </a>
-	    <header>
-	      <a href="/">
-	        <h2>
-	          {{ cosmic.object.header.metafield.site-title.value }}
-	        </h2>
-	      </a>
-	      {{{ cosmic.object.header.metafield.site-tag.value }}}
-	    </header>
-	  </section>
-
-		{{> posts-big }}
-
-		{{> posts-list }}
-		
-		<!-- Pagination -->
-		<ul class="actions pagination">
-			<li><a href="" class="disabled button big previous">Previous Page</a></li>
-			<li><a href="#" class="button big next">Next Page</a></li>
-		</ul>
-
-	</div>
-
+  {{> nav }}
+  <!-- Main -->
+  <div id="main">
+    <!-- Intro -->
+    <section id="intro">
+      <a target="_blank" href="{{ cosmic.object.header.metafield.logo-link.value }}" class="logo">
+        <img src="https://cosmicjs.com/uploads/{{ cosmic.object.header.metafield.logo.value }}" alt="" />
+      </a>
+    <header>
+      <a href="/">
+        <h2>
+          {{ cosmic.object.header.metafield.site-title.value }}
+        </h2>
+      </a>
+      {{{ cosmic.object.header.metafield.site-tag.value }}}
+    </header>
+    </section>
+    {{> posts-big }}
+    {{> posts-list }}
+    <!-- Pagination -->
+    <ul class="actions pagination">
+      <li><a href="" class="disabled button big previous">Previous Page</a></li>
+      <li><a href="#" class="button big next">Next Page</a></li>
+    </ul>
+  </div>
 {{> footer }}
