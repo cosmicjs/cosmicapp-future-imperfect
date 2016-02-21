@@ -16,6 +16,7 @@ const partials = {
   header: 'partials/header',
   footer: 'partials/footer',
   nav: 'partials/nav',
+  sidebar: 'partials/sidebar',
   'posts-big': 'partials/posts-big',
   'posts-mini': 'partials/posts-mini',
   'posts-list': 'partials/posts-list',

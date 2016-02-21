@@ -1,0 +1,45 @@
+<!-- Sidebar -->
+<section id="sidebar">
+
+  <!-- Intro -->
+  <section id="intro">
+    <a target="_blank" href="{{ cosmic.object.header.metafield.logo-link.value }}" class="logo">
+      <img src="https://cosmicjs.com/uploads/{{ cosmic.object.header.metafield.logo.value }}" alt="" />
+    </a>
+    <header>
+      <a href="/">
+        <h2>
+          {{ cosmic.object.header.metafield.site-title.value }}
+        </h2>
+      </a>
+      {{{ cosmic.object.header.metafield.site-tag.value }}}
+    </header>
+  </section>
+
+  <!-- Mini Posts -->
+  {{> posts-mini }}
+
+  <!-- Posts List -->
+  {{> posts-list }}
+
+  <!-- About -->
+  <section class="blurb">
+    <h2>{{ cosmic.object.about.title }}</h2>
+    <p>{{{ cosmic.object.about.content }}}</p>
+    <ul class="actions">
+      <li><a href="/about" class="button">Learn More</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <section id="footer">
+    <ul class="icons">
+      <li><a href="{{ cosmic.object.contact-info.metafield.twitter.value }}" class="fa-twitter"><span class="label">Twitter</span></a></li>
+      <li><a href="{{ cosmic.object.contact-info.metafield.facebook.value }}" class="fa-facebook"><span class="label">Facebook</span></a></li>
+      <li><a href="{{ cosmic.object.contact-info.metafield.instagram.value }}" class="fa-instagram"><span class="label">Instagram</span></a></li>
+      <li><a href="{{ cosmic.object.conta ct-info.metafield.rss.value }}" class="fa-rss"><span class="label">RSS</span></a></li>
+      <li><a href="{{ cosmic.object.contact-info.metafield.email.value }}" class="fa-envelope"><span class="label">Email</span></a></li>
+    </ul>
+    <p class="copyright">&copy; {{ cosmic.object.nav.metafield.site-title.value }}. Design: <a href="http://html5up.net">HTML5 UP</a>.</p>
+  </section>
+</section>
